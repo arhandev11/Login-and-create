@@ -62,7 +62,7 @@ usernameEntry.grid(row = 2,column = 2)
 passwordLabel = Label(root, text = "Password : ", font = ('bold',14), pady = 20)
 passwordLabel.grid(row = 3, column = 1)
 passwordText = StringVar()
-passwordEntry = Entry(root, textvariable = passwordText)
+passwordEntry = Entry(root, textvariable = passwordText, show='*')
 passwordEntry.grid(row = 3,column = 2)
 
 #submit button
@@ -91,13 +91,13 @@ CreateUsernameEntry.grid(row = 0,column = 1)
 #Password
 CreatePasswordLabel = Label(top, text = "Create Password : ", font = ('bold',14), pady = 20)
 CreatePasswordLabel.grid(row = 1, column = 0)
-CreatePasswordEntry = Entry(top)
+CreatePasswordEntry = Entry(top, show='*')
 CreatePasswordEntry.grid(row = 1,column = 1)
 
 #ConfirmPassword
 ConfirmPasswordLabel = Label(top, text = "Confirm Username : ", font = ('bold',14), pady = 20)
 ConfirmPasswordLabel.grid(row = 2, column = 0)
-ConfirmPasswordEntry = Entry(top)
+ConfirmPasswordEntry = Entry(top, show='*')
 ConfirmPasswordEntry.grid(row = 2,column = 1)
 
 #Button
